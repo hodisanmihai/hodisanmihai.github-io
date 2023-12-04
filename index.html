@@ -1,58 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cv</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <main>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mihai</title>
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
     <header>
-        <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h1>Hodisan Mihai.</h1>
+      <img height="100" src="images\image0.jpg" alt="selfie" />
+      <p id="job-title">Student</p>
+
+      <ul id="top-menu-bar">
+        <li><a href="#">HOME</a></li>
+        <li><a href="#">Skills</a></li>
+        <li><a href="#" class="active">Projects</a></li>
+        <li><a href="#">Languages</a></li>
+      </ul>
     </header>
-   <section class="main">
+    <section id="content">
+      <div id="side-menu">
+        <section>
+          <form action="secretara.html">
+            <h2>Contact</h2>
+            <div>
+              <label for="userEmail">Email</label>
+              <input
+                type="email"
+                name="email"
+                id="userEmail"
+                placeholder="your@email.com"
+                required
+              />
+            </div>
 
-     <section id="about">
-        <h1>About Me</h1>
-        <p></p>
-     </section>
+            <div>
+              <label for="userName">Your Name</label>
+              <input
+                type="text"
+                name="name"
+                id="userName"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
 
-     <section  id="projects">
-        <h1 class="project-title">Projects</h1>
-        <div class="project">
-            <h2>Project 1</h2>
-            <p></p>
+            <button type="submit">Send</button>
+          </form>
+        </section>
+        <section>
+          <p>
+            start server: CTRL + Shift + P -> Browser Sync mode in Browser ->
+            Enter -> / -> Enter
+          </p>
+        </section>
+      </div>
+      <div id="main">
+        <div id="home" style="display: none">
+          <h2>Home</h2>
+          <p>Welcome...</p>
         </div>
-        <div class="project">
-            <h2>Project 2</h2>
-            <p></p>
+
+        <div id="skills" style="display: none">
+          <h2>Skills</h2>
+          <ul>
+            <li class="favorite">HTML</li>
+            <li>CSS</li>
+            <li class="favorite">JS</li>
+          </ul>
         </div>
-    </section>
 
-   </section>
-    <section id="contact">
-        <h1>Contact Me</h1>
-        <p>You can reach me at  :
-       
-            <a href="mailto:mihaihodisan@gmail.com"> <img src="C:\Users\Hp\Documents\portofoliu\cv\photos\Gmail_Logo_512px.png"></a>
-         
-            <a href="https://api.whatsapp.com/send?phone=0742592669"> <img src="C:\Users\Hp\Documents\portofoliu\cv\photos\WhatsApp.svg.png"> </a>
-       
-        </p>
-    </section>
+        <div id="projects">
+          <h2>Projects</h2>
+          <p>...</p>
+        </div>
 
-    <footer>
-        <p>&copy; 2023 Hodisan Mihai. All rights reserved.</p>
-    </footer>
- </main>
-    <script src="script.js"></script>
-</body>
+        <div style="display: none" id="languages">
+          <h2>Known Languages</h2>
+          <table border="1">
+            <tr>
+              <th>Language</th>
+              <th>Level</th>
+            </tr>
+            <tr>
+              <td class="favorite">Romanian</td>
+              <td>Native</td>
+            </tr>
+            <tr>
+              <td>English</td>
+              <td>Profesional</td>
+            </tr>
+          </table>
+        </div>
+      </div>
+    </section>
+  </body>
 </html>
