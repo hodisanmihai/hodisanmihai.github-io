@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 let activePage = "home";
 
 (function () {
@@ -85,7 +84,7 @@ setTimeout(() => {
   initRubik(document.getElementById("rubikChallenge"));
   initRubik(document.getElementById("rubikChallengePage"));
 }, 10);
-=======
+
 let activePage = "home";
 
 (function () {
@@ -172,4 +171,3 @@ setTimeout(() => {
   initRubik(document.getElementById("rubikChallenge"));
   initRubik(document.getElementById("rubikChallengePage"));
 }, 10);
->>>>>>> 11e90ea0ccfcd1db680dbd3452be61f5fa1c5260

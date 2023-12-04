@@ -1,7 +1,6 @@
-<<<<<<< HEAD
 function variablesExamples() {
   console.info(2 + 3);
-  console.warn("Nicolae Matei");
+  console.warn("Mihai");
 
   var employed = true;
   var age = 18;
@@ -24,10 +23,9 @@ function updateTitle(title) {
 
 variablesExamples();
 updateTitle("Web Developer @ RWS");
-=======
 function variablesExamples() {
   console.info(2 + 3);
-  console.warn("Nicolae Matei");
+  console.warn("Mihai");
 
   var employed = true;
   var age = 18;
@@ -49,5 +47,3 @@ function updateTitle(title) {
 }
 
 variablesExamples();
-updateTitle("Web Developer @ RWS");
->>>>>>> 11e90ea0ccfcd1db680dbd3452be61f5fa1c5260
