@@ -2,5 +2,4 @@
 
 ## live 
 
-[hodisanmihai.github.io] (hodisanmihai.github.io
-)
+[hodisanmihai.github.io](hodisanmihai.github.io)
