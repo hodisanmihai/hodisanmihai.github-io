@@ -166,8 +166,3 @@ fetch("/data/skills.json")
 
     showSkills(allSkills);
   });
-
-setTimeout(() => {
-  initRubik(document.getElementById("rubikChallenge"));
-  initRubik(document.getElementById("rubikChallengePage"));
-}, 10);
