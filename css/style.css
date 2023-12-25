@@ -6,6 +6,10 @@ body {
   min-height: 100%;
   display: flex;
   flex-direction: column;
+  header,
+  img {
+    size: 5rem;
+  }
 }
 #content {
   flex: 1;
