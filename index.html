@@ -89,21 +89,5 @@
         </div>
       </div>
     </section>
-    <script>
-      function showPage(pageId) {
-        const sections = document.querySelectorAll("#main > div");
-        sections.forEach((section) => {
-          section.style.display = "none";
-        });
-
-        const selectedSection = document.getElementById(pageId);
-        if (selectedSection) {
-          selectedSection.style.display = "block";
-        }
-      }
-
-      const activePage = "projects";
-      showPage(activePage);
-    </script>
   </body>
 </html>
