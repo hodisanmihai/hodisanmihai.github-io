@@ -1,4 +1,4 @@
-var activePage = "projects";
+var activePage = "home";
 
 function show(id) {
   console.info("show", id);
