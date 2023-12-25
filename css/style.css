@@ -8,7 +8,7 @@ body {
   flex-direction: column;
   header,
   img {
-    size: 5rem;
+    size: 10rem;
   }
 }
 #content {
