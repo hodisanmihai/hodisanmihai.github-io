@@ -1,23 +1,21 @@
-var activePage = "home";
+var activePage = "projects";
 
 function show(id) {
+  console.info("show", id);
   var page = document.getElementById(id);
-  if (page) {
-    page.style.display = "block";
-  }
+  console.info("page", page);
+  page.style.display = "block";
 }
 
 function hide(id) {
-  var page = document.getElementById(id);
-  if (page) {
-    page.style.display = "none";
-  }
+  console.info("hide", id);
+  document.getElementById(id).style.display = "none";
 }
 
-function showPage(pageId) {
+function showPage(id) {
+  console.info("show page", id);
   hide(activePage);
-  show(pageId);
-  activePage = pageId;
+  show(id);
+  activePage = id;
 }
-
 show(activePage);
