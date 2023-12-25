@@ -11,11 +11,3 @@ function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
-
-function showPage(id) {
-  console.info("show page", id);
-  hide(activePage);
-  show(id);
-  activePage = id;
-}
-show(activePage);
