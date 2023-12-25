@@ -1,21 +1,23 @@
 var activePage = "home";
 
 function show(id) {
-  console.info("show", id);
   var page = document.getElementById(id);
-  console.info("page", page);
-  page.style.display = "block";
+  if (page) {
+    page.style.display = "block";
+  }
 }
 
 function hide(id) {
-  console.info("hide", id);
-  document.getElementById(id).style.display = "none";
+  var page = document.getElementById(id);
+  if (page) {
+    page.style.display = "none";
+  }
 }
 
-function showPage(id) {
-  console.info("show page", id);
+function showPage(pageId) {
   hide(activePage);
-  show(id);
-  activePage = id;
+  show(pageId);
+  activePage = pageId;
 }
+
 show(activePage);
