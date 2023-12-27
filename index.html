@@ -17,89 +17,69 @@
         <li><a href="#" onclick="showPage('skills')">SKILLS</a></li>
         <li><a href="#" onclick="showPage('projects')">PROJECTS</a></li>
         <li><a href="#" onclick="showPage('languages')">LANGUAGES</a></li>
+        <li><a href="#" onclick="showPage('contact')">CONTACT</a></li>
+        <li><a href="#" onclick="showPage('about')">ABOUT ME</a></li>
       </ul>
     </header>
     <section id="content">
-      <div id="side-menu">
-        <section>
-          <form action="secretara.html">
-            <h2>Contact</h2>
-            <div>
-              <label for="userEmail">Email</label>
-              <input
-                type="email"
-                name="email"
-                id="userEmail"
-                placeholder="your@email.com"
-                required
-              />
-            </div>
-
-            <div>
-              <label for="userName">Your Name</label>
-              <input
-                type="text"
-                name="name"
-                id="userName"
-                placeholder="Enter your name"
-                required
-              />
-            </div>
-
-            <button type="submit">Send</button>
-          </form>
-        </section>
+      <div id="home" style="display: none">
+        <h2>Home</h2>
+        <p>Hello !!!</p>
       </div>
-      <div id="main">
-        <div id="home" style="display: none">
-          <h2>Home</h2>
-          <p>Hello !!!</p>
-        </div>
 
-        <div id="skills" style="display: none">
-          <h2>Skills</h2>
-          <ul>
-            <li class="favorite">HTML</li>
-            <li>CSS</li>
-            <li class="favorite">JS</li>
-          </ul>
-        </div>
+      <div id="skills" style="display: none">
+        <h2>Skills</h2>
+        <ul>
+          <li class="favorite">HTML</li>
+          <li>CSS</li>
+          <li class="favorite">JS</li>
+        </ul>
+      </div>
 
-        <div style="display: none" id="projects">
-          <h2>Projects</h2>
-          <p>...</p>
-        </div>
+      <div style="display: none" id="projects">
+        <h2>Projects</h2>
+        <p>...</p>
+      </div>
 
-        <div style="display: none" id="languages">
-          <h2>Known Languages</h2>
-          <table border="1">
-            <tr>
-              <th>Language</th>
-              <th>Level</th>
-            </tr>
-            <tr>
-              <td class="favorite">Romanian</td>
-              <td>Native</td>
-            </tr>
-            <tr>
-              <td>English</td>
-              <td>Advanced</td>
-            </tr>
-          </table>
-        </div>
+      <div style="display: none" id="languages">
+        <h2>Known Languages</h2>
+        <table border="1">
+          <tr>
+            <th>Language</th>
+            <th>Level</th>
+          </tr>
+          <tr>
+            <td class="favorite">Romanian</td>
+            <td>Native</td>
+          </tr>
+          <tr>
+            <td>English</td>
+            <td>Advanced</td>
+          </tr>
+        </table>
+      </div>
+
+      <div style="display: none" id="contact">
+        <h2>Contact :</h2>
+        <ul>
+          <li>
+            <a href="https://api.whatsapp.com/send?phone=40742592669">
+              <img src="images\WhatsApp.svg.png" />
+            </a>
+          </li>
+          <li>
+            <a href="mailto:mihaihodisan@gmail.com"
+              ><img src="images\Gmail_Logo_512px.png"
+            /></a>
+          </li>
+        </ul>
+      </div>
+
+      <div style="display: none" id="about">
+        <h2>About Me</h2>
+        <p>nothing yet...</p>
       </div>
     </section>
-    <footer>
-      <p>You can also contact me on :</p>
-      <ul>
-        <li></li> <a href="https://api.whatsapp.com/send?phone=40742592669">
-         <img src="images\WhatsApp.svg.png" />
-         </a>
-        </li>
-        <li>
-          <a href="mailto:mihaihodisan@gmail.com"><img src="images\Gmail_Logo_512px.png"><a></li>
-      </ul>
-    </footer>
     <script src="index.js"></script>
   </body>
 </html>
