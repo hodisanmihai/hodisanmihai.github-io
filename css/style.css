@@ -12,24 +12,6 @@ body {
     padding-left: 5px;
   }
 
-  header {
-    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
-    background-size: 300% 300%;
-    animation: color 4s ease-in-out infinite;
-  }
-
-  @keyframes color {
-    0% {
-      background-position: 0 50%;
-    }
-    50% {
-      background-position: 0% 50%;
-    }
-    100% {
-      background-position: 50% 100%;
-    }
-  }
-
   #job-title {
     padding-left: 1rem;
     text-align: start;
@@ -57,11 +39,26 @@ th {
 
 #top-menu-bar {
   text-align: center;
-  background-color: #334455;
+  background: linear-gradient(45deg, #334455, rgb(17, 55, 138), #08a375);
+  background-size: 300% 300%;
+  animation: color 12s ease-in-out infinite;
   color: #fff;
   margin: 0;
   padding: 2px;
 }
+
+@keyframes color {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 50% 0%;
+  }
+}
+
 #top-menu-bar li {
   display: inline-block;
   padding: 0;
