@@ -11,6 +11,29 @@ body {
     width: 5rem;
     padding-left: 5px;
   }
+
+  header {
+    background: linear-gradient(45deg, #d2001a, #7462ff, #f48e21, #23d5ab);
+    background-size: 300% 300%;
+    animation: color 4s ease-in-out infinite;
+  }
+
+  @keyframes color {
+    0% {
+      background-position: 0 50%;
+    }
+    50% {
+      background-position: 0% 50%;
+    }
+    100% {
+      background-position: 50% 100%;
+    }
+  }
+
+  #job-title {
+    padding-left: 1rem;
+    text-align: start;
+  }
 }
 #content {
   flex: 1;
@@ -30,11 +53,6 @@ td {
 }
 th {
   padding: 5px;
-}
-
-#job-title {
-  color: green;
-  text-align: right;
 }
 
 #top-menu-bar {
