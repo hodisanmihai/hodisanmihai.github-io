@@ -73,3 +73,7 @@ th {
 td.favorite {
   font-weight: normal;
 }
+
+footer {
+  display: inline-block;
+}
