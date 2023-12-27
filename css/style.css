@@ -78,6 +78,6 @@ footer {
   display: flexbox;
 }
 footer img {
-  size: 2rem;
+  width: 2rem;
   align-items: start;
 }
