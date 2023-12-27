@@ -78,10 +78,6 @@ footer {
   display: flex;
 }
 
-footer li {
-  style: none;
-}
-
 footer img {
   width: 2rem;
   align-self: flex-start;
