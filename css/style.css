@@ -91,6 +91,10 @@ td.favorite {
   font-weight: normal;
 }
 
+#contact {
+  list-style: none;
+}
+
 #contact img {
   width: 30px;
 }
