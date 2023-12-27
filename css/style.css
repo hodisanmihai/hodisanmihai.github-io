@@ -75,9 +75,9 @@ td.favorite {
 }
 
 footer {
-  display: flexbox;
+  display: flex;
 }
 footer img {
   width: 2rem;
-  align-items: start;
+  align-slef: flex-start;
 }
