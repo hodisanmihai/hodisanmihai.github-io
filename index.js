@@ -22,4 +22,6 @@ function showPage(id) {
 function showSkills() {
   var ul = document.querySelector("skills ul");
   ul.innerHTML = "<li>HTMl</li>";
+  ul.innerHTML = "<li>CSS</li>";
+  ul.innerHTML = "<li>JS</li>";
 }
