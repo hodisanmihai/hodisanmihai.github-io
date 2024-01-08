@@ -18,3 +18,8 @@ function showPage(id) {
   show(id);
   activePage = id;
 }
+
+function showSkills() {
+  var ul = document.querySelector("skills ul");
+  ul.innerHTML = "<li>HTMl</li>";
+}
