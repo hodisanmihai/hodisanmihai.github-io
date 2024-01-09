@@ -26,6 +26,15 @@ function showSkills() {
   ul.innerHTML = "<li>JS</li>";
 }
 
-function loadNewPage(url) {
-  window.location.href = url;
+function changeContent(url) {
+  var element = document.getElementById("content");
+
+  fetch(url)
+    .then((response) => response.text())
+    .then((data) => {
+      element.innerHTML = data;
+    })
+    .catch((error) => {
+      console.log("Error fetching content: ", error);
+    });
 }
