@@ -1,5 +1,7 @@
-header {
+body {
   background-color: black;
-  display: flex;
-  padding: 10px;
+}
+
+header {
+  justify-content: flex;
 }
