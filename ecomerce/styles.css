@@ -6,6 +6,6 @@ header {
   display: flex;
 }
 
-header .nav {
+header #nav {
   width: 15px;
 }
