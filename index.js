@@ -25,3 +25,7 @@ function showSkills() {
   ul.innerHTML = "<li>CSS</li>";
   ul.innerHTML = "<li>JS</li>";
 }
+
+function loadNewPage(url) {
+  window.location.href = url;
+}
