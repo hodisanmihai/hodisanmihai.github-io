@@ -3,5 +3,9 @@ body {
 }
 
 header {
-  justify-content: flex;
+  display: flex;
+}
+
+header .nav {
+  width: 15px;
 }
