@@ -12,5 +12,7 @@ header #nav img {
   width: 30px;
 }
 
-header #logo img {
+header #cart img {
+  width: 30px;
+  padding: 10px;
 }
