@@ -24,4 +24,3 @@ function showSkills() {
   ul.innerHTML = "<li>HTMl</li>";
   ul.innerHTML = "<li>CSS</li>";
   ul.innerHTML = "<li>JS</li>";
-}
