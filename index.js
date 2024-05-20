@@ -1,7 +1,5 @@
-// variable publice
 var activePage = "home";
 
-// functii publice
 function hide(id) {
   console.info("hide", id);
   document.getElementById(id).style.display = "none";
@@ -50,7 +48,6 @@ function showSkills() {
   ul.innerHTML = text.join("");
 }
 
-// excutii
 showSkills();
 showPage(activePage);
 initEvents();
