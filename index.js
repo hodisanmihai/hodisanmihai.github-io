@@ -1,19 +1,15 @@
 var activePage = "home";
 
 function hide(id) {
-  console.info("hide", id);
   document.getElementById(id).style.display = "none";
 }
 
 function show(id) {
-  console.info("show", id);
   var page = document.getElementById(id);
-  console.debug("show page", page);
   page.style.display = "block";
 }
 
 function showPage(id) {
-  console.info("show page", id);
   hide(activePage);
   show(id);
   activePage = id;
@@ -24,7 +20,6 @@ function initEvents() {
   toolbar.addEventListener("click", function (e) {
     if (e.target.matches("a")) {
       var page = e.target.textContent.toLowerCase();
-      console.warn("click", page);
       showPage(page);
     }
   });
@@ -41,13 +36,3 @@ function showSkills() {
   ];
 
   var text = skills.map(function (skill) {
-    var cls = skill.favorite ? "favorite" : "";
-    return `<li class="${cls}">${skill.name} <span> - ${skill.endorcements}</span></li>`;
-  });
-
-  ul.innerHTML = text.join("");
-}
-
-showSkills();
-showPage(activePage);
-initEvents();
