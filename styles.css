@@ -17,6 +17,7 @@ body {
 }
 
 .content {
+  color: black;
   text-align: left;
   margin-right: 2rem;
 }

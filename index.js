@@ -35,4 +35,4 @@ function showSkills() {
     { name: "Word", endorcements: 1, favorite: false },
   ];
 
-  var text = skills.map(function (skill) {
+  var text = skills.map(function (skill)
