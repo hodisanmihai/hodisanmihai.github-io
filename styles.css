@@ -59,6 +59,27 @@ h1 {
   border: 5px solid #333;
 }
 
+@keyframes borderChange {
+  0% {
+    border-color: #333;
+  }
+  50% {
+    border-color: #ff0000;
+  }
+  100% {
+    border-color: #333;
+  }
+}
+
+.image img {
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 5px solid #333;
+  animation: borderChange 3s infinite;
+}
+
 @media (max-width: 768px) {
   .content {
     margin-right: 0;
