@@ -61,13 +61,16 @@ h1 {
 
 @keyframes borderChange {
   0% {
-    border-color: #333;
+    border-color: #ffffff;
   }
   50% {
-    border-color: #ff0000;
+    border-color: #102283;
+  }
+  75% {
+    border-color: #000000;
   }
   100% {
-    border-color: #333;
+    border-color: #ffffff;
   }
 }
 
@@ -77,7 +80,7 @@ h1 {
   border-radius: 50%;
   object-fit: cover;
   border: 5px solid #333;
-  animation: borderChange 3s infinite;
+  animation: borderChange 10s infinite;
 }
 
 @media (max-width: 768px) {
