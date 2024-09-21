@@ -175,7 +175,7 @@ main {
 
 .projectselement:hover {
   transform: scale(1.05);
-  filter: blur(1px);
+  filter: blur(0.1px);
 }
 
 .p1,
@@ -243,7 +243,6 @@ main {
   color: #333;
   text-decoration: none;
   font-weight: bold;
-  border-bottom: 2px solid transparent;
   transition: border-color 0.3s;
 }
 
@@ -374,31 +373,37 @@ footer {
 }
 
 @media (max-width: 480px) {
+  body {
+    width: auto;
+    height: auto;
+    display: inline-flex;
+  }
+
   header {
-    font-size: 20px;
+    height: 100px;
   }
 
-  .title {
-    font-size: 1.25rem;
+  main {
+    display: table-row-group;
   }
 
-  .description {
-    font-size: 0.75rem;
+  .vision {
+    background-size: 110%;
   }
 
   .projects {
-    font-size: 1rem;
+    margin-top: 50px;
+  }
+
+  .projects > .title {
+    margin-bottom: 20px;
   }
 
   .skills {
-    font-size: 1rem;
+    height: 250px;
   }
 
-  .skill1,
-  .skill2,
-  .skill3,
-  .skill4 {
-    width: 80px;
-    height: 80px;
+  footer {
+    height: 100px;
   }
 }
