@@ -242,14 +242,14 @@ main {
 }
 
 .aboutelement a {
-  color: #333;
+  color: #00674f;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
 }
 
 .aboutelement a:hover {
-  color: #00674f;
+  color: #333f;
   border-color: #00674f;
 }
 
