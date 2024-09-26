@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+
 body {
   display: flex;
   flex-direction: column;
@@ -16,7 +18,7 @@ header {
   justify-content: flex-start;
   font-size: 30px;
   margin-left: 0px;
-  font-family: "arial";
+  font-family: "Poppins";
   font-size: 40px;
   font-weight: 700;
   text-shadow: -1px 1px 2px black;
@@ -71,12 +73,12 @@ main {
 }
 
 .title {
-  font-family: "Arial";
+  font-family: "Poppins";
   font-weight: 600;
   padding-top: 20px;
   font-size: 38px;
   text-align: center;
-  text-shadow: 0px 0px 10px white;
+  text-shadow: 0px 0px 5px white;
 }
 
 .description {
@@ -241,16 +243,21 @@ main {
   opacity: 0;
 }
 
-.aboutelement a {
+.seemore {
   color: #00674f;
   text-decoration: none;
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s;
 }
 
-.aboutelement a:hover {
+.seemore:hover {
   color: #333f;
   border-color: #00674f;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .skills {
@@ -402,7 +409,11 @@ footer {
   }
 
   .skills {
-    height: 250px;
+    height: 275px;
+  }
+
+  .skillselement {
+    margin-bottom: 20px;
   }
 
   footer {

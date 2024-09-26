@@ -252,14 +252,12 @@ footer {
 }
 
 @media (max-width: 480px) {
-  /* Adjust SVG size */
   svg {
     width: 20px;
     height: auto;
     padding-right: 3px;
   }
 
-  /* Adjust header text size */
   .name {
     font-size: 20px;
   }
@@ -268,14 +266,12 @@ footer {
     font-size: 18px;
   }
 
-  /* Adjust parallax text size */
   #text {
     font-size: 2.5em;
     left: 25%;
     transform: translate(-50%, -50%);
   }
 
-  /* Reduce parallax movement intensity */
   #hill1,
   #hill2,
   #hill3,
@@ -286,7 +282,7 @@ footer {
   #plant {
     height: fit-content;
     width: fit-content;
-    transform: translateY(180px); /* Reduced movement */
+    transform: translateY(180px);
   }
 
   .parallax {
@@ -295,7 +291,6 @@ footer {
     justify-content: center;
   }
 
-  /* Content boxes resizing */
   .eo,
   .etw,
   .eth,
@@ -309,29 +304,26 @@ footer {
     flex-direction: column;
     align-items: center;
     justify-content: flex-start;
-    position: relative; /* This makes absolute positioning work inside */
+    position: relative;
   }
 
   .titlecontent {
-    position: absolute; /* Position the titles at the top of the div */
-    top: 0; /* Align to the top of the div */
-    left: 50%; /* Center horizontally */
-    transform: translateX(
-      -37.5%
-    ); /* Correct centering by adjusting horizontal position */
-    text-align: center; /* Center the text */
-    margin-top: 10px; /* Optional: Adjust margin to separate from the top */
-    width: 100%; /* Ensure title takes full width */
-    z-index: 1; /* Ensure it's layered above other content */
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-37.5%);
+    text-align: center;
+    margin-top: 10px;
+    width: 100%;
+    z-index: 1;
   }
 
   #rotate {
     transform: rotate(0deg) translateX(-20%);
   }
 
-  /* Adjust the content below the title to make space for the title */
   .textcontent {
-    margin: 60px auto 0; /* Push text content down to create space for the title */
+    margin: 60px auto 0;
     width: 90%;
     text-align: center;
   }
@@ -341,7 +333,7 @@ footer {
     width: 100%;
     justify-content: center;
     text-align: center;
-    margin-top: 60px; /* Ensure it doesn't overlap with the title */
+    margin-top: 60px;
   }
 
   .contenttext {
@@ -349,7 +341,6 @@ footer {
     margin: 15px;
   }
 
-  /* Sidebar adjustments */
   .sidebar,
   .sidebarX {
     display: flex;
@@ -357,18 +348,15 @@ footer {
     justify-content: center;
   }
 
-  /* Footer text size */
   footer {
     font-size: 18px;
   }
 
-  /* Resize parallax images */
   .parallax img {
     width: 100%;
     height: auto;
   }
 
-  /* Footer icon size */
   .whatsapp-link,
   .email-link {
     font-size: 20px;

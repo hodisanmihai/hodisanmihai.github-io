@@ -220,7 +220,6 @@ footer {
   color: #00674f;
 }
 
-/* Media Queries for Responsiveness */
 @media (max-width: 768px) {
   body {
     display: flex;
