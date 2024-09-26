@@ -121,6 +121,10 @@ ul {
   transition: opacity 0.8s ease, transform 1s ease;
 }
 
+#smallerfont {
+  font-size: 12px;
+}
+
 .title {
   margin-top: 35px;
   font-size: 25px;
@@ -317,6 +321,6 @@ footer {
   }
 
   #smallerfont {
-    font-size: 20px;
+    font-size: 9px;
   }
 }
