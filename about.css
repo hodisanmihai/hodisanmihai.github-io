@@ -248,24 +248,86 @@ footer {
 }
 
 @media (max-width: 480px) {
+  /* Adjust SVG size */
   svg {
+    width: 20px;
+    height: auto;
     padding-right: 3px;
   }
 
-  header,
-  footer {
-    border: none;
-  }
-
+  /* Adjust header text size */
   .name {
-    font-size: 25px;
+    font-size: 20px;
   }
 
+  h1 {
+    font-size: 18px;
+  }
+
+  /* Adjust parallax text size */
+  #text {
+    font-size: 2.5em;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  /* Content boxes resizing */
   .eo,
   .etw,
   .eth,
   .etf {
-    width: 300px;
-    height: 300px;
+    width: 100%;
+    min-height: 300px;
+    margin: 20px 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .leftcontent,
+  .rightcontent {
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+  }
+
+  .titlecontent,
+  .titlecontentX {
+    font-size: 24px;
+    transform: rotate(0);
+    margin-left: 0;
+  }
+
+  /* Text content adjustments */
+  .textcontent {
+    width: 90%;
+    margin: 10px auto;
+  }
+
+  .contenttext {
+    font-size: 14px;
+    margin: 15px;
+  }
+
+  /* Sidebar adjustments */
+  .sidebar,
+  .sidebarX {
+    display: none;
+  }
+
+  /* Footer text size */
+  footer {
+    font-size: 18px;
+  }
+
+  /* Resize parallax images */
+  .parallax img {
+    width: 100%;
+    height: auto;
+  }
+
+  /* Footer icon size */
+  .whatsapp-link,
+  .email-link {
+    font-size: 20px;
   }
 }
