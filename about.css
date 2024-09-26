@@ -136,6 +136,10 @@ main {
   align-self: flex-end;
 }
 
+#rotate {
+  transform: rotate(-90deg);
+}
+
 .textcontent {
   height: 90%;
   width: 80%;
@@ -267,8 +271,28 @@ footer {
   /* Adjust parallax text size */
   #text {
     font-size: 2.5em;
-    left: 50%;
+    left: 25%;
     transform: translate(-50%, -50%);
+  }
+
+  /* Reduce parallax movement intensity */
+  #hill1,
+  #hill2,
+  #hill3,
+  #hill4,
+  #hill5,
+  #tree,
+  #leaf,
+  #plant {
+    height: fit-content;
+    width: fit-content;
+    transform: translateY(180px); /* Reduced movement */
+  }
+
+  .parallax {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Content boxes resizing */
@@ -276,31 +300,48 @@ footer {
   .etw,
   .eth,
   .etf {
+    margin: 40px auto;
+    max-width: 90vw;
     width: 100%;
-    min-height: 300px;
-    margin: 20px 0;
+    min-height: auto;
+    background-color: white;
+    display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
+    justify-content: flex-start;
+    position: relative; /* This makes absolute positioning work inside */
+  }
+
+  .titlecontent {
+    position: absolute; /* Position the titles at the top of the div */
+    top: 0; /* Align to the top of the div */
+    left: 50%; /* Center horizontally */
+    transform: translateX(
+      -37.5%
+    ); /* Correct centering by adjusting horizontal position */
+    text-align: center; /* Center the text */
+    margin-top: 10px; /* Optional: Adjust margin to separate from the top */
+    width: 100%; /* Ensure title takes full width */
+    z-index: 1; /* Ensure it's layered above other content */
+  }
+
+  #rotate {
+    transform: rotate(0deg) translateX(-20%);
+  }
+
+  /* Adjust the content below the title to make space for the title */
+  .textcontent {
+    margin: 60px auto 0; /* Push text content down to create space for the title */
+    width: 90%;
+    text-align: center;
   }
 
   .leftcontent,
   .rightcontent {
     width: 100%;
-    text-align: center;
     justify-content: center;
-  }
-
-  .titlecontent,
-  .titlecontentX {
-    font-size: 24px;
-    transform: rotate(0);
-    margin-left: 0;
-  }
-
-  /* Text content adjustments */
-  .textcontent {
-    width: 90%;
-    margin: 10px auto;
+    text-align: center;
+    margin-top: 60px; /* Ensure it doesn't overlap with the title */
   }
 
   .contenttext {
@@ -311,7 +352,9 @@ footer {
   /* Sidebar adjustments */
   .sidebar,
   .sidebarX {
-    display: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 
   /* Footer text size */

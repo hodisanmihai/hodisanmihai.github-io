@@ -309,6 +309,12 @@ footer {
     font-size: 18px;
   }
 
+  svg {
+    width: 20px;
+    height: auto;
+    padding-right: 3px;
+  }
+
   .semi-donut {
     width: 120px;
     height: 60px;
