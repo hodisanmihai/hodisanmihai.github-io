@@ -328,4 +328,8 @@ footer {
   #smallerfont {
     font-size: 9px;
   }
+
+  .content3 {
+    margin-bottom: 60px;
+  }
 }
