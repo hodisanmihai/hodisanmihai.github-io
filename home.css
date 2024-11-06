@@ -405,20 +405,53 @@ footer {
   }
 
   main {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "vision"
+      "about"
+      "skills"
+      "projects";
     width: 100vw;
     padding: 0;
   }
 
   .vision {
+    grid-area: vision;
     height: 300px;
     background-size: cover;
     border-radius: 0;
     box-shadow: none;
     margin-bottom: 20px;
+  }
+
+  .about {
+    grid-area: about;
+    font-size: 18px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    transform: translateX(2.5%);
+  }
+
+  .projects {
+    grid-area: projects;
+    width: 100%;
+    margin: 20px;
+    margin-bottom: 20px;
+  }
+
+  .projectselement {
+    margin-bottom: 50px;
+  }
+
+  .skills {
+    grid-area: skills;
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+    border-radius: 16px;
   }
 
   .visioncontent {
@@ -444,13 +477,8 @@ footer {
 
   .visionpers {
     width: 150px;
-    height: 300px;
+    height: 325px;
     margin-left: 0;
-  }
-
-  .projects {
-    width: 100%;
-    margin: 20px 0;
   }
 
   .projects > .title {
@@ -472,24 +500,10 @@ footer {
     aspect-ratio: 16/9;
   }
 
-  .about {
-    font-size: 18px;
-    padding: 10px;
-    width: 100%;
-    height: auto;
-  }
-
   .aboutelement {
     width: 100%;
     height: auto;
     margin-bottom: 15px;
-  }
-
-  .skills {
-    flex-direction: column;
-    height: auto;
-    padding: 15px;
-    border-radius: 16px;
   }
 
   .skillselement {
